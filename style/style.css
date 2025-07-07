@@ -251,3 +251,12 @@ a:hover {
 .whatsapp-float:hover {
   background-color: #1ebe57;
 }
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff4e6;
+  color: #d84315;
+  font-size: 0.9rem;
+  border-top: 1px solid #ffd6b0;
+  margin-top: 40px;
+}
