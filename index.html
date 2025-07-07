@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forneria 195</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="images/Logo da pizzaria do Douglas.jpg" alt="Logo Forneria 195" class="logo" />
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav id="menu" class="menu">
+        <a href="#">Início</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+    <div class="header-text">
+      <h1>Forneria 195</h1>
+      <p>Sabor artesanal direto do forno 🍕</p>
+    </div>
+  </header>
+
+  <section class="posts">
+    <div class="card">
+      <div class="slider">
+        <div class="slides">
+          <!-- 30 imagens -->
+          <img src="Images Pizzaria Douglas/1.jpg" alt="Pizza 1" loading="lazy" />
+          <img src="Images Pizzaria Douglas/2.jpg" alt="Pizza 2" loading="lazy" />
+          <img src="Images Pizzaria Douglas/3.jpg" alt="Pizza 3" loading="lazy" />
+          <img src="Images Pizzaria Douglas/4.jpg" alt="Pizza 4" loading="lazy" />
+          <img src="Images Pizzaria Douglas/5.jpg" alt="Pizza 5" loading="lazy" />
+          <img src="Images Pizzaria Douglas/6.jpg" alt="Pizza 6" loading="lazy" />
+          <img src="Images Pizzaria Douglas/7.jpg" alt="Pizza 7" loading="lazy" />
+          <img src="Images Pizzaria Douglas/8.jpg" alt="Pizza 8" loading="lazy" />
+          <img src="Images Pizzaria Douglas/9.jpg" alt="Pizza 9" loading="lazy" />
+          <img src="Images Pizzaria Douglas/10.jpg" alt="Pizza 10" loading="lazy" />
+          <img src="Images Pizzaria Douglas/11.jpg" alt="Pizza 11" loading="lazy" />
+          <img src="Images Pizzaria Douglas/12.jpg" alt="Pizza 12" loading="lazy" />
+          <img src="Images Pizzaria Douglas/13.jpg" alt="Pizza 13" loading="lazy" />
+          <img src="Images Pizzaria Douglas/14.jpg" alt="Pizza 14" loading="lazy" />
+          <img src="Images Pizzaria Douglas/15.jpg" alt="Pizza 15" loading="lazy" />
+          <img src="Images Pizzaria Douglas/16.jpg" alt="Pizza 16" loading="lazy" />
+          <img src="Images Pizzaria Douglas/17.jpg" alt="Pizza 17" loading="lazy" />
+          <img src="Images Pizzaria Douglas/18.jpg" alt="Pizza 18" loading="lazy" />
+          <img src="Images Pizzaria Douglas/19.jpg" alt="Pizza 19" loading="lazy" />
+          <img src="Images Pizzaria Douglas/20.jpg" alt="Pizza 20" loading="lazy" />
+          <img src="Images Pizzaria Douglas/21.jpg" alt="Pizza 21" loading="lazy" />
+          <img src="Images Pizzaria Douglas/22.jpg" alt="Pizza 22" loading="lazy" />
+          <img src="Images Pizzaria Douglas/23.jpg" alt="Pizza 23" loading="lazy" />
+          <img src="Images Pizzaria Douglas/24.jpg" alt="Pizza 24" loading="lazy" />
+          <img src="Images Pizzaria Douglas/25.jpg" alt="Pizza 25" loading="lazy" />
+          <img src="Images Pizzaria Douglas/26.jpg" alt="Pizza 26" loading="lazy" />
+          <img src="Images Pizzaria Douglas/27.jpg" alt="Pizza 27" loading="lazy" />
+          <img src="Images Pizzaria Douglas/28.jpg" alt="Pizza 28" loading="lazy" />
+          <img src="Images Pizzaria Douglas/29.jpg" alt="Pizza 29" loading="lazy" />
+          <img src="Images Pizzaria Douglas/30.jpg" alt="Pizza 30" loading="lazy" />
+        </div>
+
+        <div class="nav prev" onclick="moveSlide(-1)">&#10094;</div>
+        <div class="nav next" onclick="moveSlide(1)">&#10095;</div>
+
+        <div class="indicators" id="indicators"></div>
+      </div>
+
+      <div class="card-content">
+        <h2>Pizza do Dia: Abobrinha Italiana</h2>
+        <p>Leve, crocante e com aquele toque fresco 🌿</p>
+        <p class="hashtags">#PizzaDoDia #PizzaVegFloripa #Forneria195</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="buttons">
+    <a href="https://www.instagram.com/forneria195/" target="_blank" rel="noopener noreferrer">Ver no Instagram</a>
+  </div>
+
+  <!-- Botão WhatsApp Flutuante -->
+  <a href="https://wa.me/554898443082" target="_blank" class="whatsapp-float" aria-label="Pedir no WhatsApp" rel="noopener noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    Pedir no WhatsApp
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

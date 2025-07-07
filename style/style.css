@@ -1,0 +1,253 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #d84315; /* cor temática pizza */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff4e6;
+  border-bottom: 2px solid #d84315;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 60px;
+  object-fit: contain;
+}
+
+.menu-toggle {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Mobile menu */
+.menu.active {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff4e6;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  padding: 10px 15px;
+  border: 1px solid #d84315;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+/* Header Text */
+.header-text {
+  text-align: center;
+  margin: 30px 0;
+  background: #fbe7d6;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+.header-text h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #d84315;
+  margin-bottom: 10px;
+}
+
+.header-text p {
+  font-size: 1.3rem;
+}
+
+/* Card e Slider */
+.posts {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding: 0 10px;
+}
+
+.card {
+  width: 100%;
+  max-width: 900px;
+  border: 2px solid #d84315;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff9f3;
+  box-shadow: 0 4px 10px rgb(216 67 21 / 0.3);
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+  user-select: none;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(216, 67, 21, 0.7);
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 30px;
+  border-radius: 3px;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.nav:hover {
+  background-color: #d84315;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.indicators {
+  text-align: center;
+  padding: 10px 0;
+  background: #fff4e6;
+}
+
+.indicators .indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #d84315;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.indicators .indicator.active {
+  opacity: 1;
+  box-shadow: 0 0 5px #d84315;
+}
+
+/* Card content */
+.card-content {
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.card-content h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #d84315;
+}
+
+.card-content p {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.hashtags {
+  color: #777;
+  font-style: italic;
+}
+
+/* Botão Instagram */
+.buttons {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.buttons a {
+  background-color: #d84315;
+  color: white;
+  font-weight: 700;
+  padding: 12px 25px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.buttons a:hover {
+  background-color: #b73b11;
+}
+
+/* Botão WhatsApp flutuante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: white;
+  font-weight: 700;
+  padding: 12px 18px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(37, 211, 102, 0.4);
+  text-decoration: none;
+  z-index: 10000;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 24px;
+  height: 24px;
+  user-select: none;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe57;
+}
