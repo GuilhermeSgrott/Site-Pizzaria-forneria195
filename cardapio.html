@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cardápio Forneria 195</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style/cardápio.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff3e0;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1,
+    h2 {
+      color: #e67e22;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      color: #d35400;
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #27ae60;
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #e67e22;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 30px;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+
+    .whatsapp-button i {
+      margin-right: 5px;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #d35400;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 70px;
+      right: 20px;
+      background: #e67e22;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50px;
+      font-size: 14px;
+      cursor: pointer;
+      z-index: 999;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s;
+    }
+
+    .back-to-top:hover {
+      background-color: #d35400;
+    }
+
+    /* Botão fixo do WhatsApp no canto direito */
+    .whatsapp-fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #e67e22;
+      color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      z-index: 1000;
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-fixed:hover {
+      background-color: #d35400;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cardápio Forneria 195</h1>
+
+    
+
+  <!-- Botão Voltar para o Cardápio -->
+  <a href="index.html" class="btn-voltar" aria-label="Voltar para o cardápio">
+   voltar para o cardápio
+  </a>
+
+  <!-- Combos -->
+  <section class="section" id="combos">
+    <h2>Combos</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="Images icones pizzaria/Combo individual.avif" alt="Combo Individual" />
+        <h3>Combo Individual</h3>
+        <p>Pizza Individual + Broto Doce + Refrigerante Lata</p>
+        <p class="price">R$ 64,90</p>
+        <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+      </div>
+      <div class="card">
+        <img src="Images icones pizzaria/Combo familia.avif" alt="Combo Família" />
+        <h3>Combo Família</h3>
+        <p>Pizza Família + Broto Doce + Refrigerante 2L</p>
+        <p class="price">R$ 109,90</p>
+        <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pizzas Individuais -->
+  <section class="section" id="pizzas">
+    <h2>Pizzas Individuais</h2>
+    <div class="card-container">
+      <div class="card">
+        <img
+          src="Images icones pizzaria/Mussarela.avif"
+          alt="Mussarela"
+        />
+        <h3>Mussarela</h3>
+        <p>Queijo mussarela derretido, molho de tomate e orégano.</p>
+        <p class="price">R$ 29,90</p>
+       <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="Images icones pizzaria/Calabresa.avif"
+          alt="Calabresa"
+        />
+        <h3>Calabresa</h3>
+        <p>Molho de tomate, calabresa fatiada e cebola.</p>
+        <p class="price">R$ 32,90</p>
+        <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="Images icones pizzaria/Portuguesa.avif"
+          alt="Portuguesa"
+        />
+        <h3>Portuguesa</h3>
+        <p>Presunto, ovo, ervilha, cebola, azeitonas e molho de tomate.</p>
+        <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="Images icones pizzaria/Frango com catupiry.avif"
+          alt="Frango com Catupiry"
+        />
+        <h3>Frango com Catupiry</h3>
+        <p>Frango desfiado, catupiry e molho de tomate.</p>
+        <p class="price">R$ 34,90</p>
+        <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+
+</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="Images icones pizzaria/Peperoni.avif"
+          alt="Pepperoni"
+        />
+        <h3>Pepperoni</h3>
+        <p>Molho de tomate, pepperoni fatiado e queijo mussarela.</p>
+        <p class="price">R$ 36,90</p>
+        <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+      </div>
+    </div>
+    </div>
+
+      <div class="card">
+        <img
+          src="Images icones pizzaria/Peperoni.avif"
+          alt="Pepperoni"
+        />
+        <h3>Pepperoni</h3>
+        <p>Molho de tomate, pepperoni fatiado e queijo mussarela.</p>
+        <p class="price">R$ 36,90</p>
+        <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+  </section>
+
+  <!-- Bebidas -->
+  <section class="section" id="bebidas">
+    <h2>Bebidas</h2>
+    <div class="card-container">
+      <div class="card">
+        <img
+          src="Images icones pizzaria/Guarana normal.avif"
+          alt="Refrigerante Lata"
+        />
+        <h3>Guaraná Antartica 350ml</h3>
+        <p>Refrigerante geladinho para acompanhar sua pizza.</p>
+        <p class="price">R$ 6,90</p>
+        <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="Images icones pizzaria/coca zero.avif"
+          alt="Suco Natural"
+        />
+        <h3>Coca-cola Zero 350ml</h3>
+        <p>Refrigerante geladinho para acompanhar sua pizza.</p>
+        <p class="price">R$ 8,90</p>
+        <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="Images icones pizzaria/coca normal.avif"
+          alt="Água Mineral"
+        />
+        <h3>Coca-cola  350ml</h3>
+       <p>Refrigerante geladinho para acompanhar sua pizza.</p>
+        <p class="">R$ 4,50</p>
+        <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+      </div>
+    </div>
+    
+  </section>
+   <section class="section" id="bebidas">
+   
+    <div class="card-container">
+      <div class="card">
+        <img
+          src="Images icones pizzaria/guarana zero.avif"
+          alt="Refrigerante Lata"
+        />
+        <h3>Guaraná Antartica Zero  350ml</h3>
+        <p>Refrigerante geladinho para acompanhar sua pizza.</p>
+        <p class="price">R$ 6,90</p>
+        <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="Images icones pizzaria/coca zero.avif"
+          alt="Suco Natural"
+        />
+        <h3>Coca-cola Zero</h3>
+         <p>Refrigerante geladinho para acompanhar sua pizza.</p>
+        <p class="price">R$ 6,90</p>
+       <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="Images icones pizzaria/Coca-cola 2L.avif"
+          alt="Água Mineral"
+        />
+        <h3>Coca-cola 2l</h3>
+       <p>Refrigerante geladinho para acompanhar sua pizza.</p>
+        <p class="">R$ 16,90</p>
+        <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+      </div>
+    </div>
+    
+    
+  </section>
+
+   <section class="section" id="bebidas">
+    
+    <div class="card-container">
+      <div class="card">
+        <img
+          src="Images icones pizzaria/Coca-cola zero 2L.avif"
+          alt="Refrigerante Lata"
+        />
+        <h3>Coca-cola 2L Zero</h3>
+        <p>Refrigerante geladinho para acompanhar sua pizza.</p>
+        <p class="price">R$ 16,90</p>
+        <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="Images icones pizzaria/Guarana 2L.avif"
+          alt="Suco Natural"
+        />
+        <h3>Guaraná Antartica 2L</h3>
+         <p>Refrigerante geladinho para acompanhar sua pizza.</p>
+        <p class="price">R$ 16,90</p>
+        <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="Images icones pizzaria/Aguá Mineral.avif"
+          alt="Água Mineral"
+        />
+        <h3>Água Mineral Águai 510ml</h3>
+        <p class="">R$ 6,00</p>
+        <a
+  class="anotaai-button"
+  href="https://pedido.anota.ai/"
+  target="_blank"
+>
+  🛒 Pedir no Anota AI
+</a>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Botão fixo WhatsApp -->
+  <a
+    href="https://wa.me/554898443082"
+    target="_blank"
+    class="whatsapp-fixed"
+    aria-label="Contato WhatsApp"
+    title="Contato WhatsApp"
+    ><i class="fab fa-whatsapp"></i
+  ></a>
+
+  
+</body>
+</html>
+
